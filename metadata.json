@@ -1,0 +1,6 @@
+{
+  "name": "CashMatrix Quantum Compound Engine v5.0",
+  "description": "Observer-Only Autonomous Operations Center with real-time DEX WebSockets, 50/50 autonomic profit splitter, compound engine, multi-agent self-healing swarm, and BSC testnet contract intelligence.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

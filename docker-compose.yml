@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  cashmatrix-engine:
+    build: .
+    container_name: cashmatrix-quantum-engine
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - VITE_RPC_URL=https://bsc-testnet-rpc.publicnode.com
+    restart: unless-stopped

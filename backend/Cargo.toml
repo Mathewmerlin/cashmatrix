@@ -1,0 +1,45 @@
+[package]
+name = "cashmatrix-backend"
+version = "5.0.0"
+edition = "2021"
+authors = ["CashMatrix Quantum Operations Team <ops@cashmatrix.io>"]
+description = "High-performance Rust backend for CashMatrix Quantum Compound Engine v5.0 with automated encrypted S3 backups"
+
+[dependencies]
+# Async Runtime & Scheduling
+tokio = { version = "1.36", features = ["full"] }
+chrono = { version = "0.4", features = ["serde"] }
+
+# Web & Networking
+axum = { version = "0.7", features = ["ws", "macros"] }
+tower-http = { version = "0.5", features = ["cors", "trace"] }
+futures = "0.3"
+
+# Prometheus Metrics & Observability
+metrics = "0.23"
+metrics-exporter-prometheus = { version = "0.15", default-features = false }
+
+# AWS S3 SDK for Automated Encrypted Snapshots
+aws-config = { version = "1.5", features = ["credentials-login"] }
+aws-sdk-s3 = "1.5"
+aws-smithy-types = "1.2"
+
+# Cryptography & Compression
+sha2 = "0.10"
+aes-gcm = "0.10"
+flate2 = "1.0"
+rand = "0.8"
+hex = "0.4"
+
+# Database & Web3
+sqlx = { version = "0.7", features = ["runtime-tokio-native-tls", "sqlite", "chrono"] }
+ethers = { version = "2.0", features = ["ws"] }
+
+# Serialization & Logging
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+dotenvy = "0.15"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+async-trait = "0.1"
+thiserror = "1.0"

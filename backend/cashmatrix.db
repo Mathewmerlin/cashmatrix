@@ -1,0 +1,2 @@
+-- CashMatrix Quantum SQLite Database
+CREATE TABLE IF NOT EXISTS system_state (key TEXT PRIMARY KEY, val TEXT);

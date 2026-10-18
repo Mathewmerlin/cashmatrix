@@ -1,0 +1,5 @@
+{
+  "summary": "Institutional architecture dossier updated with Rust backend service module (`backend/src/s3_backup.rs`), `aws-sdk-s3` crate integration, Gzip compression, SHA-256 verification, and configurable Tokio scheduler.",
+  "updatedAt": "2026-10-16T05:40:54.197544152Z",
+  "userFacing": true
+}
