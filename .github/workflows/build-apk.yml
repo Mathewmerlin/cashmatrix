@@ -11,10 +11,10 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
-      - name: Install Node.js
+      - name: Install Node.js 22
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
       - run: npm install --legacy-peer-deps
       - run: npx cap sync android
       - name: Build Debug APK with Gradle
