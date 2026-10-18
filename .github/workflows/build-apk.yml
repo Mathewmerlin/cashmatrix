@@ -16,6 +16,7 @@ jobs:
         with:
           node-version: '22'
       - run: npm install --legacy-peer-deps
+      - run: npm run build         # <-- This compiles your React/Vite web assets into the 'dist' folder
       - run: npx cap sync android
       - name: Build Debug APK with Gradle
         working-directory: ./android
